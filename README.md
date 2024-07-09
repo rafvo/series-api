@@ -25,7 +25,7 @@
 
 7. Acessar o container de PHP do docker
 
-```docker exec -it php_laravel /bin/sh```
+```docker-compose exec app bash```
 
 8. Executar migrations (não existem seeders)
 
