@@ -1,5 +1,4 @@
 # series-api
-# CRUD of series, seasons and episodes using dependency injection with Laravel
 
 ## Steps to execute the project
 1. If you are on Windows, connect to WSL and then enter sudo mode
