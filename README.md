@@ -11,7 +11,7 @@
 
 3. Acessar a pasta do docker do projeto
 
-```cd docker```
+```cd laravel-docker```
 
 4. Verificar se seu docker está executando
 
