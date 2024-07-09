@@ -1,0 +1,1228 @@
+{
+	"info": {
+		"_postman_id": "b424fb10-8385-4d68-99c6-78e55e2ff00e",
+		"name": "Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35969082"
+	},
+	"item": [
+		{
+			"name": "/api",
+			"item": [
+				{
+					"name": "/series",
+					"item": [
+						{
+							"name": "/",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/series?limit=10&offset=1",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "offset",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/serie-seasons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/21/serie-seasons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"21",
+										"serie-seasons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/serie-seasons/episodes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/55/serie-seasons/episodes",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"55",
+										"serie-seasons",
+										"episodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/seasons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "",
+										"description": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "",
+										"description": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/21/seasons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"21",
+										"seasons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/seasons/episodes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base-url}}/api/series/1/seasons/episodes",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"1",
+										"seasons",
+										"episodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/seasons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/seasons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"seasons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/seasons/episodes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/seasons/episodes",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"seasons",
+										"episodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/24",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 73,\n    \"name\": \"Série Teste 2\",\n    \"seasons\": [\n        {\n            \"id\": 95,\n            \"name\": \"Temporada 1.1\",\n            \"number\": 1,\n            \"serie_id\": 73,\n            \"episodes\": [\n                {\n                    \"id\": 197,\n                    \"name\": \"Episódio 1.2\",\n                    \"number\": 1,\n                    \"season_id\": 95,\n                    \"watched\": false\n                },\n                {\n                    \"id\": 198,\n                    \"name\": \"Episódio 2.1\",\n                    \"number\": 2,\n                    \"season_id\": 95,\n                    \"watched\": true\n                }\n            ]\n        },\n        {\n            \"id\": 96,\n            \"name\": \"Temporada 2.1\",\n            \"number\": 2,\n            \"serie_id\": 73,\n            \"episodes\": [\n                {\n                    \"id\": 199,\n                    \"name\": \"Episódio 1.1\",\n                    \"number\": 1,\n                    \"season_id\": 96,\n                    \"watched\": false\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/series/55",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"55"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/23",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/episodes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/series/55/episodes",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series",
+										"55",
+										"episodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/",
+							"protocolProfileBehavior": {
+								"followRedirects": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Série Teste\",\n    \"seasons\": [\n        {\n            \"name\": \"Temporada 1\",\n            \"number\": 1,\n            \"episodes\": [\n                {\n                    \"name\": \"Episódio 1\",\n                    \"number\": 1,\n                    \"watched\": false\n                },\n                {\n                    \"name\": \"Episódio 2\",\n                    \"number\": 2,\n                    \"watched\": true\n                }\n            ]\n        },\n        {\n            \"name\": \"Temporada 2\",\n            \"number\": 2,\n            \"episodes\": [\n                {\n                    \"name\": \"Episódio 1\",\n                    \"number\": 1,\n                    \"watched\": false\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/series",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"series"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/seasons",
+					"item": [
+						{
+							"name": "/",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Temporada 1\",\n    \"number\": 2,\n    \"serie_id\": 21\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/seasons",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"seasons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Temporada 2\",\n    \"number\": 4,\n    \"serie_id\": 21\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/seasons/1",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"seasons",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/seasons/12121",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"seasons",
+										"12121"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/episodes",
+					"item": [
+						{
+							"name": "/",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Episódio 4\",\n    \"number\": 4,\n    \"season_id\": 1,\n    \"watched\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/episodes",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Episódio 1\",\n    \"number\": 1,\n    \"season_id\": 1,\n    \"watched\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/episodes/1",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/episodes/3",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"watched\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/episodes/4",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/watched",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/episodes/4/watched",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes",
+										"4",
+										"watched"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id}/unwatched",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/episodes/4/unwatched",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"episodes",
+										"4",
+										"unwatched"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "/",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}/api/users",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/register",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"const response = pm.response.json();",
+											"",
+											"pm.environment.set(\"user_email\", response.user.email);",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Usuário 6\",\n    \"email\": \"u6@e.com\",\n    \"password\": \"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base-url}}/api/users/register",
+									"host": [
+										"{{base-url}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/address/cep",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/address/cep?cep=86800-430",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"address",
+								"cep"
+							],
+							"query": [
+								{
+									"key": "cep",
+									"value": "86800-430"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth-check",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/auth-check",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"auth-check"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.environment.set(\"token\", \"Bearer \" + response.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"u1@e.com\",\n    \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/login",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/user",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/logout",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mail",
+			"item": [
+				{
+					"name": "/series/{id}/created",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/mail/series/27/created",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"mail",
+								"series",
+								"27",
+								"created"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base-url}}",
+					"host": [
+						"{{base-url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
